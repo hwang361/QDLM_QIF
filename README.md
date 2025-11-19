@@ -37,10 +37,11 @@ Your star means a lot to us in developing this project! ⭐⭐⭐
 conda create -n qdlm python=3.10 -y
 conda activate qdlm
 git clone https://github.com/FelixMessi/QDLM
-pip install --upgrade qdlm 
+# pip install --upgrade qdlm (error occurs)
+cd QDLM
 pip install -r requirements.txt
 pip install math-verify==0.8.0 antlr4-python3-runtime==4.11.0 sympy==1.14.0
-cd ./lm-evaluation-harness && pip install -e .
+cd lm-evaluation-harness && pip install -e .
 ```
 
 To run evaluation for QuaRot, please download and install the [fast-hadamard-transform](https://github.com/Dao-AILab/fast-hadamard-transform/releases) with your cuda version.
